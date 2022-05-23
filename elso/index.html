@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Kő - Papír - Olló</title>
+</head>
+<body onload="onBodyLoad()">
+    <div id="playerDiv">
+        
+        <div class="moves">
+            <img src="rock.png" class="chooseMove" id="rock" onclick="getRandomMoveFromPC(this)" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)"/>
+            <img src="paper.png" class="chooseMove" id="paper" onclick="getRandomMoveFromPC(this)" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)"/>
+            <img src="scissors.png" class="chooseMove" id="scissors" onclick="getRandomMoveFromPC(this)" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)"/>
+        </div>
+    </div>
+    <div id="vsDiv"><h1 id="vs"> - VS - </h1></div>
+    <div id="pcDiv">
+        <div class="moves">
+            <img class="chooseMove" id="pcMove"/>
+        </div>
+    </div>
+    <div id="scoreBoard">
+        <div id="playerScoreBoard">
+            <h1 class="boardItem">Player Score</h1>
+            <h1 class="boardItem" id="playerScore">0</h1>
+        </div>
+        <div id="pcScoreBoard">
+            <h1 class="boardItem">PC Score</h1>
+            <h1 class="boardItem" id="pcScore">0</h1>
+        </div>
+        <h1 id="response"></h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

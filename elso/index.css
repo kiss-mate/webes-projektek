@@ -1,0 +1,50 @@
+body {
+    background-image: url('https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+}
+div {
+    display: flex;
+}
+h1 {
+    /* display: inline-block; */
+    text-align: center;
+}
+img {
+    height: 100px;
+    border: 3px solid grey;
+}
+.chooseMove {
+    margin: auto;
+}
+.moves {
+    margin: auto;
+    width: 50%;
+}
+.boardItem {
+    width: 50%;
+}
+#scoreBoard {
+    display: inline;
+    width: 40%;
+    margin: auto;
+}
+#playerScoreBoard, #pcScoreBoard {
+    width: 30%;
+    margin: auto;
+}
+#playerPromt {
+    margin-left: 200px;
+}
+#pcPromt {
+    margin-left: 138px;
+}
+#vsDiv {
+    width: 50%;
+    margin: auto;
+}
+#playerDiv, #pcDiv, #vsDiv {
+    margin-top: 50px;
+}
+#vs {
+    width: 100px;
+    margin: auto;
+}

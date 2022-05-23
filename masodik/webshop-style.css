@@ -1,0 +1,92 @@
+body {
+    background-image: url(https://images.pexels.com/photos/161172/cycling-bike-trail-sport-161172.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+}
+
+img {
+    height: 200px;
+    box-shadow: 2px 2px 3px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div {
+    text-align: center;
+}
+
+.grid-item {
+    background-color: rgba(185, 185, 185, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin: auto;
+}
+
+.product-name {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.amount {
+    text-align: center;
+    height: 30px;
+    width: 30%;
+    font-size: 20px;
+    margin: auto;
+}
+
+.deleteOrderBtn {
+    background-color: red;
+    height: 2em;
+    font-weight: 800;
+    font-size: 1em;
+    margin-left: 50px;
+}
+
+.order-item {
+    font-size: 1.5em;
+}
+
+#grid-container {
+    margin: auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px 30px;
+    
+}
+
+#title{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+#btn-container {
+    text-align: center;
+    padding: 30px;
+}
+
+#orderButton, #refreshOrder {
+    height: 60px;
+    width: 270px;
+    font-size: 20px;
+    font-weight: 800;
+    margin: auto;
+}
+
+#orders-container {
+    text-align: justify;
+    background-color: white;
+    width: 50%;
+    margin: auto;
+}
+
+button:hover {
+    background-color: rgba(25, 100, 140, 0.7);
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}

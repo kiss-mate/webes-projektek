@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webshop-style.css">
+    <title>Biker Shop</title>
+</head>
+<body>
+    <div>
+        <h2 id="title">BIKER SHOP</h2>
+        <div id="grid-container">
+            <div  class="grid-item" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)" onclick="toggleItemSelection(this)">
+                <img src="https://www.bike-components.de/assets/p/i/1280x960/78493.webp" alt="rim brake">
+                <h2 id="Brake" class="product-name"></h2>
+                <input type="number" class="amount" name="points" max="10" min="1" value="1">
+            </div>
+            <div  class="grid-item" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)" onclick="toggleItemSelection(this)">
+                <img src="https://www.bike-components.de/assets/p/i/1280x960/348547.webp" alt="tyre">
+                <h2 id="Tyre" class="product-name"></h2>
+                <input type="number" class="amount" name="points" max="10" min="1" value="1">
+            </div>
+            <div  class="grid-item" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)" onclick="toggleItemSelection(this)">
+                <img src="https://www.bike-components.de/assets/p/i/1280x960/347735.webp" alt="handle">
+                <h2 id="Handle" class="product-name"></h2>
+                <input type="number" class="amount" name="points" max="10" min="1" value="1">
+            </div>
+            <div class="grid-item" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)" onclick="toggleItemSelection(this)">
+                <img src="https://www.bike-components.de/assets/p/i/1280x960/309972.webp" alt="bag">
+                <h2 id="Bag" class="product-name"></h2>
+                <input type="number" class="amount" name="points" max="10" min="1" value="1">
+            </div>
+            <div  class="grid-item" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)" onclick="toggleItemSelection(this)">
+                <img src="https://www.bike-components.de/assets/p/i/1280x960/343812.webp" alt="rack">
+                <h2 id="Rack" class="product-name"></h2>
+                <input type="number" class="amount" name="points" max="10" min="1" value="1">
+            </div>
+            <div  class="grid-item" onmouseenter="mouseEnter(this)" onmouseleave="mouseLeave(this)" onclick="toggleItemSelection(this)">
+                <img src="https://www.bike-components.de/assets/p/i/1280x960/173849.webp" alt="phone-stand">
+                <h2 id="Phoneholder" class="product-name"></h2>
+                <input type="number" class="amount" name="points" max="10" min="1" value="1">
+            </div>
+        </div>
+        <div id="btn-container">
+            <button id="orderButton" onclick="sendOrder()">Order selected products</button>
+        </div>
+        <div id="btn-container">
+            <button id="refreshOrder" onclick="listOrders()">Show order view</button>
+        </div>
+        <div id="orders-container">
+            <ul id="orders"></ul>
+        </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="webshop-script.js"></script>
+</body>
+</html>
